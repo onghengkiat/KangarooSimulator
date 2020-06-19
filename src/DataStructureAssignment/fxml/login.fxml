@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootLogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #5C4033;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataStructureAssignment.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="598.0" prefHeight="864.0" prefWidth="480.0" style="-fx-background-color: #2A0033;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="username" alignment="CENTER" layoutX="185.0" layoutY="321.0" prefHeight="37.0" prefWidth="208.0" promptText="Enter username" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" stylesheets="@../res/style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" alignment="CENTER" layoutX="185.0" layoutY="390.0" prefHeight="38.0" prefWidth="208.0" promptText="Enter password" style="-fx-background-color: #2A0033; -fx-border-color: #9643A9; -fx-border-radius: 20;" stylesheets="@../res/style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="errormsg" layoutX="169.0" layoutY="738.0" prefHeight="20.0" prefWidth="163.0" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="399.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="85.0" layoutY="270.0" prefHeight="3.0" prefWidth="332.0" />
+            <Separator layoutX="85.0" layoutY="718.0" prefHeight="0.0" prefWidth="332.0" />
+            <Label layoutX="147.0" layoutY="37.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Candara Light" size="53.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="115.0" text="to" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="register" layoutX="153.0" layoutY="479.0" mnemonicParsing="false" onAction="#menuButtonHandler" prefHeight="47.0" prefWidth="196.0" styleClass="myButton" stylesheets="@../res/menubutton.css" text="Register" textFill="WHITE" />
+            <Button fx:id="login" layoutX="153.0" layoutY="557.0" mnemonicParsing="false" onAction="#menuButtonHandler" prefHeight="47.0" prefWidth="196.0" styleClass="myButton" stylesheets="@../res/menubutton.css" text="Login" textFill="WHITE" />
+            <ImageView fitHeight="117.0" fitWidth="178.0" layoutX="162.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/logo.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="quit" layoutX="153.0" layoutY="634.0" mnemonicParsing="false" onAction="#menuButtonHandler" prefHeight="47.0" prefWidth="196.0" styleClass="myButton" stylesheets="@../res/menubutton.css" text="Exit" textFill="WHITE" />
+            <Label layoutX="86.0" layoutY="330.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="864.0" fitWidth="1056.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../res/0.1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

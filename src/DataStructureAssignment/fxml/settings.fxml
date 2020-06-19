@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootSetting" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataStructureAssignment.controller.SettingController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="291.0" style="-fx-background-color: #05071F;" styleClass="button" stylesheets="@../res/playbutton.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/user.PNG" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin></ImageView>
+            <Label text="User" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="toSimMode" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toSimPage" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Simulation" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/circuit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="history" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toHistoryPage" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="History">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/clipboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="settings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toSettings" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Log out">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="quit" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#quit" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Exit">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/reset.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="363.0" layoutY="35.0" prefHeight="62.0" prefWidth="222.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <Button fx:id="previous" layoutX="692.0" layoutY="501.0" maxHeight="60.0" maxWidth="60.0" minHeight="76.0" minWidth="76.0" mnemonicParsing="false" onAction="#previous" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 70;" stylesheets="@../res/playbutton.css" text="❮" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="next" layoutX="1066.0" layoutY="501.0" maxHeight="60.0" maxWidth="60.0" minHeight="76.0" minWidth="76.0" mnemonicParsing="false" onAction="#next" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 70;" stylesheets="@../res/playbutton.css" text="❯" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="38.0" />
+         </font>
+      </Button>
+      <Label layoutX="1158.0" layoutY="515.0" prefHeight="47.0" prefWidth="174.0" text="Next Song" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="515.0" prefHeight="47.0" prefWidth="216.0" text="Previous Song" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="songName" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="299.0" prefHeight="18.0" prefWidth="1233.0" text="Set Song name" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="1305.0" layoutY="695.0" mnemonicParsing="false" onAction="#apply" prefHeight="76.0" prefWidth="119.0" style="-fx-background-radius: 20; -fx-border-width: 4; -fx-border-radius: 20; -fx-border-color: #FFFF;" stylesheets="@../res/applyButton.css" text="Apply" textFill="WHITE" AnchorPane.bottomAnchor="93.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button layoutX="1045.0" layoutY="695.0" mnemonicParsing="false" onAction="#stopOrPlay" prefHeight="76.0" prefWidth="216.0" style="-fx-background-radius: 20; -fx-border-width: 4; -fx-border-radius: 20; -fx-border-color: #FFFF;" stylesheets="@../res/applyButton.css" text="Stop/Play" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>

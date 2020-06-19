@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #03020A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataStructureAssignment.controller.OutputController">
+   <children>
+      <SplitPane dividerPositions="0.7" style="-fx-background-color: #03020A;" stylesheets="@../res/scrollstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #03020A;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <SplitPane dividerPositions="0.05" layoutY="14.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: #03020A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="197.0" prefWidth="762.0" style="-fx-background-color: #02030A;">
+                           <children>
+                              <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="92.0" stylesheets="@../res/fullpackstyling.css" text=" START" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="7.0">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/play.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button contentDisplay="RIGHT" layoutX="218.0" layoutY="7.0" mnemonicParsing="false" onAction="#pause" prefHeight="26.0" prefWidth="92.0" stylesheets="@../res/fullpackstyling.css" text="PAUSE" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="167.0" AnchorPane.topAnchor="7.0">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/pause.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button contentDisplay="RIGHT" layoutX="405.0" layoutY="7.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="92.0" stylesheets="@../res/fullpackstyling.css" text="SAVE" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="7.0">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/save.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button contentDisplay="RIGHT" layoutX="614.0" layoutY="7.0" mnemonicParsing="false" onAction="#toSimPage" prefHeight="26.0" prefWidth="92.0" stylesheets="@../res/fullpackstyling.css" text="MENU" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="501.0" AnchorPane.topAnchor="7.0">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/menu.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button contentDisplay="RIGHT" layoutX="943.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="92.0" stylesheets="@../res/fullpackstyling.css" text="EXIT" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="668.0" AnchorPane.topAnchor="7.0">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/quit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="mapAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #03020A;">
+                           <children>
+                              <ImageView fitHeight="871.0" fitWidth="1200.0" layoutX="7.0" layoutY="-7.0" AnchorPane.bottomAnchor="-50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-130.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../res/mapImage.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="14.0" layoutY="773.0" prefHeight="26.0" prefWidth="200.0" text="Male Kangaroo" textFill="BLACK" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0">
+                                       <image>
+                                          <Image url="@../res/maleKangaroo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="719.0" prefHeight="26.0" prefWidth="200.0" text="Female Kangaroo" textFill="DEEPPINK" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="15.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0">
+                                       <image>
+                                          <Image url="@../res/femaleKangaroo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="674.0" prefHeight="26.0" prefWidth="200.0" text="Non-Colony Area" textFill="TOMATO" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="15.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <Circle fill="TRANSPARENT" radius="20.0" stroke="TOMATO" strokeType="INSIDE" strokeWidth="5" />
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="26.0" layoutY="634.0" prefHeight="26.0" prefWidth="200.0" text="Colony Area" textFill="FORESTGREEN" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="15.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <Circle fill="TRANSPARENT" radius="20.0" stroke="FORESTGREEN" strokeType="INSIDE" strokeWidth="5" />
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="783.0" prefHeight="26.0" prefWidth="200.0" text="Legends" textFill="BLUE" underline="true" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="dayLabel" layoutX="14.0" layoutY="6.0" text="Day 0" textFill="RED" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="6.0">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="698.0" prefWidth="350.0" style="-fx-background-color: #03020A;">
+               <children>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="1000.0" prefWidth="362.0" style="-fx-background-color: #03020A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="302.0" style="-fx-background-color: #03020A;">
+                           <children>
+                              <ScrollPane layoutY="50.0" style="-fx-background-color: #03020A;" stylesheets="@../res/scrollstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                 <content>
+                                    <TextFlow fx:id="detailsTextFlow" prefHeight="495.0" prefWidth="443.0" style="-fx-background-color: #02030A; -fx-text-fill: #FFFFFF;" stylesheets="@../res/scrollstyle.css" />
+                                 </content>
+                              </ScrollPane>
+                              <TextField editable="false" layoutX="21.0" layoutY="50.0" prefHeight="50.0" prefWidth="302.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #03020A;" text="DETAILS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #03020A;">
+                           <children>
+                              <ScrollPane style="-fx-background-color: #03020A;" stylesheets="@../res/scrollstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                 <content>
+                                    <TextFlow fx:id="logTextFlow" prefHeight="800.0" prefWidth="455.0" style="-fx-background-color: #03020A; -fx-text-fill: #FFFFFF;" />
+                                 </content>
+                              </ScrollPane>
+                              <TextField editable="false" prefHeight="50.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #03020A;" text="LOG HISTORY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

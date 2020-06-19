@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataStructureAssignment.controller.InputController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="291.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/user.PNG" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin></ImageView>
+            <Label text="User" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="simPage" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toSimPage" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Simulation" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/circuit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="history" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toHistory" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="History">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/clipboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="settings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#toSettings" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Log out">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#exit" prefHeight="100.0" prefWidth="259.0" stylesheets="@../res/buttonstyle.css" text="Exit">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/reset.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="332.0" layoutY="150.0" prefHeight="62.0" prefWidth="298.0" text="Input Mode for" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="1313.0" layoutY="712.0" mnemonicParsing="false" onAction="#nextToOutput" prefHeight="76.0" prefWidth="150.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-width: 4; -fx-border-radius: 20 20 20 20;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Label fx:id="currentKangarooLabel" layoutX="630.0" layoutY="153.0" text="Kangaroo - 1" textFill="WHITE">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="84.0" layoutX="426.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/kanga.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="94.0" layoutX="420.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/area.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="291.0" layoutY="21.0" mnemonicParsing="false" onAction="#backToKangarooNumInput" prefHeight="79.0" prefWidth="150.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-width: 0; -fx-border-radius: 20 20 20 20;" text="&lt; Back" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="94.0" layoutX="420.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/grass.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="94.0" layoutX="1013.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/gender.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="94.0" layoutX="1013.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/jump.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="kangarooID" editable="false" layoutX="546.0" layoutY="308.0" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-radius: 10 10 10 10; -fx-border-width: 4;" stylesheets="@../res/style.css" text="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="554.0" layoutY="280.0" text="Kangaroo ID" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kangarooLocation" layoutX="554.0" layoutY="505.0" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-radius: 10 10 10 10; -fx-border-width: 4;" stylesheets="@../res/style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="562.0" layoutY="477.0" text="Location" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pouchCapacity" layoutX="554.0" layoutY="717.0" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-radius: 10 10 10 10; -fx-border-width: 4;" stylesheets="@../res/style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="562.0" layoutY="689.0" text="Pouch capacity" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="male" layoutX="1143.0" layoutY="304.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="female" layoutX="1313.0" layoutY="304.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="jumpingAbility" layoutX="1143.0" layoutY="503.0" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: #02030A; -fx-border-color: #FFFF; -fx-border-radius: 10 10 10 10; -fx-border-width: 4;" stylesheets="@../res/style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="1151.0" layoutY="475.0" text="Jumping Ability" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>
